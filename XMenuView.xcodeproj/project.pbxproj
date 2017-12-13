@@ -14,6 +14,7 @@
 		26E4C51E1FE0D57900BA6E39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26E4C51C1FE0D57900BA6E39 /* LaunchScreen.storyboard */; };
 		26E4C5211FE0D57900BA6E39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E4C5201FE0D57900BA6E39 /* main.m */; };
 		26E4C5311FE0FD8800BA6E39 /* XSegmentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E4C5301FE0FD8800BA6E39 /* XSegmentVC.m */; };
+		26E4C5351FE12F3500BA6E39 /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E4C5341FE12F3500BA6E39 /* UIView+Category.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		26E4C5201FE0D57900BA6E39 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		26E4C52F1FE0FD8800BA6E39 /* XSegmentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSegmentVC.h; sourceTree = "<group>"; };
 		26E4C5301FE0FD8800BA6E39 /* XSegmentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSegmentVC.m; sourceTree = "<group>"; };
+		26E4C5331FE12F3500BA6E39 /* UIView+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Category.h"; sourceTree = "<group>"; };
+		26E4C5341FE12F3500BA6E39 /* UIView+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Category.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,7 @@
 		26E4C5101FE0D57800BA6E39 /* XMenuView */ = {
 			isa = PBXGroup;
 			children = (
+				26E4C5321FE12F3500BA6E39 /* Category */,
 				26E4C52E1FE0FD8800BA6E39 /* XSegmentVC */,
 				26E4C5111FE0D57800BA6E39 /* AppDelegate.h */,
 				26E4C5121FE0D57900BA6E39 /* AppDelegate.m */,
@@ -82,6 +86,15 @@
 				26E4C5301FE0FD8800BA6E39 /* XSegmentVC.m */,
 			);
 			path = XSegmentVC;
+			sourceTree = "<group>";
+		};
+		26E4C5321FE12F3500BA6E39 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				26E4C5331FE12F3500BA6E39 /* UIView+Category.h */,
+				26E4C5341FE12F3500BA6E39 /* UIView+Category.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +171,7 @@
 				26E4C5161FE0D57900BA6E39 /* ViewController.m in Sources */,
 				26E4C5211FE0D57900BA6E39 /* main.m in Sources */,
 				26E4C5131FE0D57900BA6E39 /* AppDelegate.m in Sources */,
+				26E4C5351FE12F3500BA6E39 /* UIView+Category.m in Sources */,
 				26E4C5311FE0FD8800BA6E39 /* XSegmentVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
