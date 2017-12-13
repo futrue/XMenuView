@@ -39,7 +39,7 @@
 
 #pragma mark - 默认配置
 - (void)defaultConfig {
-    _headViewBackgroundColor = [UIColor colorWithWhite:1 alpha:0.9];
+    _menuViewBackgroundColor = [UIColor colorWithWhite:1 alpha:0.9];
     _titleColor = [UIColor blackColor];
     _titleSelectedColor = [UIColor redColor];
     _fontSize = 16;
@@ -136,7 +136,7 @@
         [_menuView setShowsVerticalScrollIndicator:NO];
         [_menuView setShowsHorizontalScrollIndicator:NO];
         _menuView.bounces = NO;
-        _menuView.backgroundColor = self.headViewBackgroundColor;
+        _menuView.backgroundColor = self.menuViewBackgroundColor;
         
         if (self.menuType == SegmentMenuTypeScroll) {
             _menuView.contentSize = CGSizeMake(self.buttonWidth * self.subViewControllers.count, self.buttonHeight);

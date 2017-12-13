@@ -23,7 +23,7 @@ typedef NS_ENUM(NSInteger, SegmentContentStyle) {
 //每个标签对应ViewController数组
 @property (nonatomic, strong) NSArray *subViewControllers;
 //标签栏背景色
-@property (nonatomic, strong) UIColor *headViewBackgroundColor;
+@property (nonatomic, strong) UIColor *menuViewBackgroundColor;
 //非选中状态下标签字体颜色
 @property (nonatomic, strong) UIColor *titleColor;
 //选中标签字体颜色

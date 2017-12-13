@@ -18,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"x-menu view";
+    self.navigationItem.title = @"-menu-";
     if ([self respondsToSelector:@selector(edgesForExtendedLayout)]){
         self.edgesForExtendedLayout = UIRectEdgeNone;
     }
@@ -32,8 +32,9 @@
         vc.view.backgroundColor = RandomColor;
         [controlArray addObject:vc];
     }
-//    vc.defaultSelectIndex = 1;
-//    vc.view.frame = CGRectMake(10, 10, self.view.bounds.size.width - 20, 200);
+    vc.menuViewBackgroundColor = [UIColor orangeColor];
+    vc.defaultSelectIndex = 1;
+    vc.view.frame = CGRectMake(10, 10, self.view.bounds.size.width - 20, 300);
     vc.subViewControllers = controlArray;
     [vc addToParentViewController:self];
     
