@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "XSegmentVC.h"
+#define RandomColor [UIColor colorWithRed:(random()%255)/255.0 green:(random()%255)/255.0 blue:(random()%255)/255.0 alpha:1]
 
 @interface ViewController ()
 
@@ -16,7 +18,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.navigationItem.title = @"x-menu view";
+    if ([self respondsToSelector:@selector(edgesForExtendedLayout)]){
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+    }
+        
+    XSegmentVC *vc = [[XSegmentVC alloc]init];
+    NSArray *titleArray = @[@"推荐", @"订阅", @"健康", @"资讯"];
+    NSMutableArray *controlArray = [[NSMutableArray alloc]init];
+    for (int i = 0; i < titleArray.count; i ++) {
+        UIViewController *vc = [[UIViewController alloc] init];
+        vc.title = titleArray[i];
+        vc.view.backgroundColor = RandomColor;
+        [controlArray addObject:vc];
+    }
+//    vc.defaultSelectIndex = 1;
+//    vc.view.frame = CGRectMake(10, 10, self.view.bounds.size.width - 20, 200);
+    vc.subViewControllers = controlArray;
+    [vc addToParentViewController:self];
+    
 }
 
 
