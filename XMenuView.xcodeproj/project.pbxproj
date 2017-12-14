@@ -32,6 +32,7 @@
 		26E4C5301FE0FD8800BA6E39 /* XSegmentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSegmentVC.m; sourceTree = "<group>"; };
 		26E4C5331FE12F3500BA6E39 /* UIView+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Category.h"; sourceTree = "<group>"; };
 		26E4C5341FE12F3500BA6E39 /* UIView+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Category.m"; sourceTree = "<group>"; };
+		26E4C53A1FE1367E00BA6E39 /* XSegmentViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XSegmentViewProtocol.h; path = ../../../../Documents/XSegmentViewProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +85,7 @@
 			children = (
 				26E4C52F1FE0FD8800BA6E39 /* XSegmentVC.h */,
 				26E4C5301FE0FD8800BA6E39 /* XSegmentVC.m */,
+				26E4C53A1FE1367E00BA6E39 /* XSegmentViewProtocol.h */,
 			);
 			path = XSegmentVC;
 			sourceTree = "<group>";

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "XSegmentViewProtocol.h"
 
 typedef NS_ENUM(NSInteger, SegmentMenuType) {
     SegmentMenuTypeScroll, // 标签栏滚动
@@ -19,7 +20,7 @@ typedef NS_ENUM(NSInteger, SegmentContentStyle) {
 };
 
 @interface XSegmentVC : UIViewController
-@property (nonatomic, assign) CGRect viewFrame;
+
 //每个标签对应ViewController数组
 @property (nonatomic, strong) NSArray *subViewControllers;
 //标签栏背景色
@@ -31,19 +32,24 @@ typedef NS_ENUM(NSInteger, SegmentContentStyle) {
 //标签字体大小
 @property (nonatomic, assign) CGFloat fontSize;
 //标签栏每个按钮高度
-@property (nonatomic, assign) CGFloat buttonHeight;
-//标签栏每个按钮宽度
-@property (nonatomic, assign) CGFloat buttonWidth;
+@property (nonatomic, assign) CGFloat menuHeight;
+//选中标签下划宽度
+@property (nonatomic, assign) CGFloat indicatorLineWidth;
 //选中标签下划线高度
-@property (nonatomic, assign) CGFloat bottomLineHeight;
+@property (nonatomic, assign) CGFloat indicatorLineHeight;
 //选中标签底部划线颜色
-@property (nonatomic, strong) UIColor *bottomLineColor;
+@property (nonatomic, strong) UIColor *indicatorLineColor;
 //标签栏类型，默认为滚动
 @property (nonatomic, assign) SegmentMenuType menuType;
 //内容类型，默认为滚动
 @property (nonatomic, assign) SegmentContentStyle contentStyle;
 //默认选中，默认为0
 @property (nonatomic, assign) NSInteger defaultSelectIndex;
+
+
+// 位于目录和滚动视图的中间的view，特殊情况会有
+@property (nonatomic, weak) id <XSegmentViewProtocol> delegate;
+
 
 - (void)addToParentViewController:(UIViewController *)parent;
 
