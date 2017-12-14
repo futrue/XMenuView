@@ -7,17 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26CC582D1FE2220F00A72238 /* XSegmentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 26CC582B1FE2220F00A72238 /* XSegmentVC.m */; };
 		26E4C5131FE0D57900BA6E39 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E4C5121FE0D57900BA6E39 /* AppDelegate.m */; };
 		26E4C5161FE0D57900BA6E39 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E4C5151FE0D57900BA6E39 /* ViewController.m */; };
 		26E4C5191FE0D57900BA6E39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26E4C5171FE0D57900BA6E39 /* Main.storyboard */; };
 		26E4C51B1FE0D57900BA6E39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26E4C51A1FE0D57900BA6E39 /* Assets.xcassets */; };
 		26E4C51E1FE0D57900BA6E39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26E4C51C1FE0D57900BA6E39 /* LaunchScreen.storyboard */; };
 		26E4C5211FE0D57900BA6E39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E4C5201FE0D57900BA6E39 /* main.m */; };
-		26E4C5311FE0FD8800BA6E39 /* XSegmentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E4C5301FE0FD8800BA6E39 /* XSegmentVC.m */; };
 		26E4C5351FE12F3500BA6E39 /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E4C5341FE12F3500BA6E39 /* UIView+Category.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26CC582A1FE2220F00A72238 /* XSegmentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSegmentVC.h; sourceTree = "<group>"; };
+		26CC582B1FE2220F00A72238 /* XSegmentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSegmentVC.m; sourceTree = "<group>"; };
+		26CC582C1FE2220F00A72238 /* XSegmentViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSegmentViewProtocol.h; sourceTree = "<group>"; };
 		26E4C50E1FE0D57800BA6E39 /* XMenuView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMenuView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26E4C5111FE0D57800BA6E39 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		26E4C5121FE0D57900BA6E39 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -28,11 +31,8 @@
 		26E4C51D1FE0D57900BA6E39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26E4C51F1FE0D57900BA6E39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26E4C5201FE0D57900BA6E39 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		26E4C52F1FE0FD8800BA6E39 /* XSegmentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSegmentVC.h; sourceTree = "<group>"; };
-		26E4C5301FE0FD8800BA6E39 /* XSegmentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSegmentVC.m; sourceTree = "<group>"; };
 		26E4C5331FE12F3500BA6E39 /* UIView+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Category.h"; sourceTree = "<group>"; };
 		26E4C5341FE12F3500BA6E39 /* UIView+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Category.m"; sourceTree = "<group>"; };
-		26E4C53A1FE1367E00BA6E39 /* XSegmentViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XSegmentViewProtocol.h; path = ../../../../Documents/XSegmentViewProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,9 +46,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26CC58291FE2220F00A72238 /* XSegmentVC */ = {
+			isa = PBXGroup;
+			children = (
+				26CC582A1FE2220F00A72238 /* XSegmentVC.h */,
+				26CC582B1FE2220F00A72238 /* XSegmentVC.m */,
+				26CC582C1FE2220F00A72238 /* XSegmentViewProtocol.h */,
+			);
+			path = XSegmentVC;
+			sourceTree = "<group>";
+		};
 		26E4C5051FE0D57800BA6E39 = {
 			isa = PBXGroup;
 			children = (
+				26CC58291FE2220F00A72238 /* XSegmentVC */,
 				26E4C5101FE0D57800BA6E39 /* XMenuView */,
 				26E4C50F1FE0D57800BA6E39 /* Products */,
 			);
@@ -66,7 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				26E4C5321FE12F3500BA6E39 /* Category */,
-				26E4C52E1FE0FD8800BA6E39 /* XSegmentVC */,
 				26E4C5111FE0D57800BA6E39 /* AppDelegate.h */,
 				26E4C5121FE0D57900BA6E39 /* AppDelegate.m */,
 				26E4C5141FE0D57900BA6E39 /* ViewController.h */,
@@ -78,16 +88,6 @@
 				26E4C5201FE0D57900BA6E39 /* main.m */,
 			);
 			path = XMenuView;
-			sourceTree = "<group>";
-		};
-		26E4C52E1FE0FD8800BA6E39 /* XSegmentVC */ = {
-			isa = PBXGroup;
-			children = (
-				26E4C52F1FE0FD8800BA6E39 /* XSegmentVC.h */,
-				26E4C5301FE0FD8800BA6E39 /* XSegmentVC.m */,
-				26E4C53A1FE1367E00BA6E39 /* XSegmentViewProtocol.h */,
-			);
-			path = XSegmentVC;
 			sourceTree = "<group>";
 		};
 		26E4C5321FE12F3500BA6E39 /* Category */ = {
@@ -173,8 +173,8 @@
 				26E4C5161FE0D57900BA6E39 /* ViewController.m in Sources */,
 				26E4C5211FE0D57900BA6E39 /* main.m in Sources */,
 				26E4C5131FE0D57900BA6E39 /* AppDelegate.m in Sources */,
+				26CC582D1FE2220F00A72238 /* XSegmentVC.m in Sources */,
 				26E4C5351FE12F3500BA6E39 /* UIView+Category.m in Sources */,
-				26E4C5311FE0FD8800BA6E39 /* XSegmentVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
