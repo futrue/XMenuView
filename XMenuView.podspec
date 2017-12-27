@@ -1,4 +1,4 @@
-@version = "1.5.0"
+@version = "1.2"
 
 Pod::Spec.new do |s|
 s.name = "XMenuView"
@@ -10,7 +10,7 @@ s.license = { :type => 'MIT', :file => 'LICENSE' }
 s.author = { "SongGuoxing" => "1146776306@qq.com" }
 s.ios.deployment_target = '8.0'
 s.source = { :git => "https://github.com/futrue/XMenuView.git", :tag => "v#{s.version}" }
-s.source_files = 'XSegmentVC/*/.{h,m}'
+s.source_files = 'XMenuView/XSegmentVC/*.{h,m}'
 s.requires_arc = true
 s.framework = "UIKit"
 end

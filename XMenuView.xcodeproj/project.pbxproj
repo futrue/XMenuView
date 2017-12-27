@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		26CC582D1FE2220F00A72238 /* XSegmentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 26CC582B1FE2220F00A72238 /* XSegmentVC.m */; };
+		269CADDE1FECD865007AE48E /* XSegmentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 269CADDC1FECD865007AE48E /* XSegmentVC.m */; };
 		26E4C5131FE0D57900BA6E39 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E4C5121FE0D57900BA6E39 /* AppDelegate.m */; };
 		26E4C5161FE0D57900BA6E39 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E4C5151FE0D57900BA6E39 /* ViewController.m */; };
 		26E4C5191FE0D57900BA6E39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26E4C5171FE0D57900BA6E39 /* Main.storyboard */; };
@@ -18,9 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		26CC582A1FE2220F00A72238 /* XSegmentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSegmentVC.h; sourceTree = "<group>"; };
-		26CC582B1FE2220F00A72238 /* XSegmentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSegmentVC.m; sourceTree = "<group>"; };
-		26CC582C1FE2220F00A72238 /* XSegmentViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSegmentViewProtocol.h; sourceTree = "<group>"; };
+		269CADDB1FECD865007AE48E /* XSegmentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSegmentVC.h; sourceTree = "<group>"; };
+		269CADDC1FECD865007AE48E /* XSegmentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSegmentVC.m; sourceTree = "<group>"; };
+		269CADDD1FECD865007AE48E /* XSegmentViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSegmentViewProtocol.h; sourceTree = "<group>"; };
 		26E4C50E1FE0D57800BA6E39 /* XMenuView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMenuView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26E4C5111FE0D57800BA6E39 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		26E4C5121FE0D57900BA6E39 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -46,20 +46,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		26CC58291FE2220F00A72238 /* XSegmentVC */ = {
+		269CADDA1FECD865007AE48E /* XSegmentVC */ = {
 			isa = PBXGroup;
 			children = (
-				26CC582A1FE2220F00A72238 /* XSegmentVC.h */,
-				26CC582B1FE2220F00A72238 /* XSegmentVC.m */,
-				26CC582C1FE2220F00A72238 /* XSegmentViewProtocol.h */,
+				269CADDB1FECD865007AE48E /* XSegmentVC.h */,
+				269CADDC1FECD865007AE48E /* XSegmentVC.m */,
+				269CADDD1FECD865007AE48E /* XSegmentViewProtocol.h */,
 			);
-			path = XSegmentVC;
+			name = XSegmentVC;
+			path = XMenuView/XSegmentVC;
 			sourceTree = "<group>";
 		};
 		26E4C5051FE0D57800BA6E39 = {
 			isa = PBXGroup;
 			children = (
-				26CC58291FE2220F00A72238 /* XSegmentVC */,
+				269CADDA1FECD865007AE48E /* XSegmentVC */,
 				26E4C5101FE0D57800BA6E39 /* XMenuView */,
 				26E4C50F1FE0D57800BA6E39 /* Products */,
 			);
@@ -173,8 +174,8 @@
 				26E4C5161FE0D57900BA6E39 /* ViewController.m in Sources */,
 				26E4C5211FE0D57900BA6E39 /* main.m in Sources */,
 				26E4C5131FE0D57900BA6E39 /* AppDelegate.m in Sources */,
-				26CC582D1FE2220F00A72238 /* XSegmentVC.m in Sources */,
 				26E4C5351FE12F3500BA6E39 /* UIView+Category.m in Sources */,
+				269CADDE1FECD865007AE48E /* XSegmentVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

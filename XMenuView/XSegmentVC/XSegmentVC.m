@@ -99,6 +99,9 @@
     } completion:^(BOOL finished) {
         self.isLineAnimation = NO;
     }];
+    if ([self.delegate respondsToSelector:@selector(segmentChangedIndex:)]) {
+        [self.delegate segmentChangedIndex:index];
+    }
 }
 
 #pragma mark - Menu Button

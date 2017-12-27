@@ -9,7 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @protocol XSegmentViewProtocol <NSObject>
-
+/** 位于目录和容器中间的特殊view */
 - (UIView *)viewBetweenMenuAndContent;
-
+/** index更新 */
+- (void)segmentChangedIndex:(NSInteger)index;
 @end

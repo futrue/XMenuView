@@ -52,6 +52,10 @@
     return label;
 }
 
+- (void)segmentChangedIndex:(NSInteger)index {
+    NSLog(@"index == %li",index);
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
